@@ -10,7 +10,6 @@
     <nav class="navbar navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
             <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Ajuda Aqui
         </a>
     </nav>
 
@@ -19,7 +18,7 @@
             <div class="card-abrir-chamado">
                 <div class="card">
                     <div class="card-header">
-                        Abertura de chamado
+                        Realizar chamada
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -34,8 +33,7 @@
                                     <div class="form-group">
                                         <label>Categoria</label>
                                         <select class="form-control">
-                                            <option>Criação Usuário</option>
-                                            <option>Impressora</option>
+                                            <option>Escolher categoria</option>
                                             <option>Hardware</option>
                                             <option>Software</option>
                                             <option>Rede</option>
@@ -44,16 +42,16 @@
 
                                     <div class="form-group">
                                         <label>Descrição</label>
-                                        <textarea class="form-control" rows="3"></textarea>
+                                        <textarea class="form-control" rows="3" placeholder="Descrição"></textarea>
                                     </div>
 
                                     <div class="row mt-5">
                                         <div class="col-6">
-                                            <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                                            <button class="btn btn-primary btn-block btn-block" type="submit">Voltar</button>
                                         </div>
 
                                         <div class="col-6">
-                                            <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
+                                            <button class="btn btn-primary btn-block btn-block" type="submit">Enviar</button>
                                         </div>
                                     </div>
                                 </form>

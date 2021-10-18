@@ -18,7 +18,7 @@
             <div class="card-consultar-chamado">
                 <div class="card">
                     <div class="card-header">
-                        Consulta de chamado
+                        Consultar chamadas
                     </div>
 
                     <div class="card-body">
@@ -43,7 +43,7 @@
 
                         <div class="row mt-5">
                             <div class="col-6">
-                                <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                                <button class="btn btn-primary btn-block" type="submit">Voltar</button>
                             </div>
                         </div>
                     </div>
