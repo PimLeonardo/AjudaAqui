@@ -1,11 +1,4 @@
-<?php 
-    session_start();
-    
-    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
-        header('Location: index.php?login=erro2');
-    }
-
-?>
+<?php require_once "valida_acesso.php" ?> 
 
 <html>
 
@@ -57,7 +50,7 @@
 
                                     <div class="row mt-5">
                                         <div class="col-6">
-                                            <button class="btn btn-primary btn-block btn-block" type="submit">Voltar</button>
+                                            <a class="btn btn-primary btn-block btn-block" href="home.php">Voltar</a>
                                         </div>
 
                                         <div class="col-6">
