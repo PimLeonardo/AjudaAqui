@@ -1,5 +1,3 @@
-<?php require_once "valida_acesso.php" ?> 
-
 <html>
 
 <head>
@@ -27,16 +25,20 @@
                         <div class="row">
                             <div class="col">
 
-                                <form>
+                                <form method="post" action="registra_chamado.php">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input name="email" type="email" class="form-control" placeholder="Email">
+                                    </div>
                                     <div class="form-group">
                                         <label>Título</label>
-                                        <input type="text" class="form-control" placeholder="Título">
+                                        <input name="titulo" type="text" class="form-control" placeholder="Título">
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Categoria</label>
-                                        <select class="form-control">
-                                            <option>Escolher categoria</option>
+                                        <label>Tipo</label>
+                                        <select name="tipo" class="form-control">
+                                            <option>Escolher tipo</option>
                                             <option>Hardware</option>
                                             <option>Software</option>
                                             <option>Rede</option>
@@ -45,12 +47,12 @@
 
                                     <div class="form-group">
                                         <label>Descrição</label>
-                                        <textarea class="form-control" rows="3" placeholder="Descrição"></textarea>
+                                        <textarea name="descricao" class="form-control" rows="3" placeholder="Descrição"></textarea>
                                     </div>
 
                                     <div class="row mt-5">
                                         <div class="col-6">
-                                            <a class="btn btn-primary btn-block btn-block" href="home.php">Voltar</a>
+                                            <a class="btn btn-primary btn-block btn-block" href="index.php">Voltar</a>
                                         </div>
 
                                         <div class="col-6">
@@ -58,6 +60,7 @@
                                         </div>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>
