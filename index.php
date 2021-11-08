@@ -57,11 +57,13 @@
                             <?php } ?>
 
                             <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+                            <a class="btn btn-primary btn-block btn-block" href="consultar_duvidas_frequentes.php">Dúvidas frequentes</a>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>

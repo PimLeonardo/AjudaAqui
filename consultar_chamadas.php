@@ -63,6 +63,11 @@
                                 </div>
                             </div>
                         <?php } ?>
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <a class="btn btn-primary btn-block" href="home.php">Voltar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
