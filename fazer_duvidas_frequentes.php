@@ -26,21 +26,21 @@
             <div class="card-abrir-chamado">
                 <div class="card">
                     <div class="card-header">
-                        Realizar Dúvidas frequentes
+                        Dúvidas frequentes
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
 
-                                <form>
+                                <form method="post" action="registra_duvidas_frequentes.php">
                                     <div class="form-group">
                                         <label>Título</label>
-                                        <input type="text" class="form-control" placeholder="Título">
+                                        <input name="titulo" type="text" class="form-control" placeholder="Título">
                                     </div>
 
                                     <div class="form-group">
                                         <label>Resposta</label>
-                                        <textarea class="form-control" rows="3" placeholder="Descrição"></textarea>
+                                        <textarea name="resposta" class="form-control" rows="3" placeholder="Descrição"></textarea>
                                     </div>
 
                                     <div class="row mt-5">

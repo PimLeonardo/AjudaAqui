@@ -14,4 +14,5 @@
     fclose($chamada);
 
     header('Location: index.php');
+
 ?>

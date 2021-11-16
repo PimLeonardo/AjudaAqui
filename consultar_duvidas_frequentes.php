@@ -1,3 +1,18 @@
+<?php 
+
+    $duvidas = array();
+
+    $duvida = fopen('duvida.txt', 'r');
+
+    while(!feof($duvida)) {
+        $registro = fgets($duvida);
+        $duvidas[] = $registro;
+    }
+
+    fclose($duvida);
+
+?>
+
 <html>
 
 <head>
@@ -24,13 +39,24 @@
 
                     <div class="card-body">
 
-                        <div class="card mb-3 bg-light">
-                            <div class="card-body">
-                                <h5 class="card-title">Título</h5>
-                                <p class="card-text">Resposta</p>
-                            </div>
-                        </div>
+                        <?php foreach ($duvidas as $duvidas_frequentes) { ?>
+                                <?php
+                                    
+                                    $duvidas_dados = explode('#', $duvidas_frequentes);
 
+                                    if(count($duvidas_dados) < 2) {
+                                        continue;
+                                    }
+
+                                ?>
+
+                            <div class="card mb-3 bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title"><?=$duvidas_dados[0]?></h5>
+                                    <p class="card-text"><?=$duvidas_dados[1]?></p>
+                                </div>
+                            </div>
+                        <?php } ?>
                         <div class="row mt-5">
                             <div class="col-6">
                                 <a class="btn btn-primary btn-block" href="index.php">Voltar</a>
