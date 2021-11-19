@@ -28,26 +28,26 @@
                                 <form method="post" action="registra_chamado.php">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input name="email" type="email" class="form-control" placeholder="Email">
+                                        <input name="email" type="email" class="form-control" placeholder="Email" required maxlength="150">
                                     </div>
                                     <div class="form-group">
                                         <label>Título</label>
-                                        <input name="titulo" type="text" class="form-control" placeholder="Título">
+                                        <input name="titulo" type="text" class="form-control" placeholder="Título" required maxlength="150">
                                     </div>
 
                                     <div class="form-group">
                                         <label>Tipo</label>
                                         <select name="tipo" class="form-control">
-                                            <option>Escolher tipo</option>
-                                            <option>Hardware</option>
-                                            <option>Software</option>
-                                            <option>Rede</option>
+                                            <option value="">Escolher tipo</option>
+                                            <option value="Hardware">Hardware</option>
+                                            <option value="Software">Software</option>
+                                            <option value="Rede">Rede</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Descrição</label>
-                                        <textarea name="descricao" class="form-control" rows="3" placeholder="Descrição"></textarea>
+                                        <textarea name="descricao" class="form-control" rows="3" placeholder="Descrição" required maxlength="1550"></textarea>
                                     </div>
 
                                     <div class="row mt-5">

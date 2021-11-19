@@ -35,12 +35,12 @@
                                 <form method="post" action="registra_duvidas_frequentes.php">
                                     <div class="form-group">
                                         <label>Título</label>
-                                        <input name="titulo" type="text" class="form-control" placeholder="Título">
+                                        <input name="titulo" type="text" class="form-control" placeholder="Título" required maxlength="150">
                                     </div>
 
                                     <div class="form-group">
                                         <label>Resposta</label>
-                                        <textarea name="resposta" class="form-control" rows="3" placeholder="Descrição"></textarea>
+                                        <textarea name="resposta" class="form-control" rows="3" placeholder="Descrição" required maxlength="1550"></textarea>
                                     </div>
 
                                     <div class="row mt-5">

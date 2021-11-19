@@ -13,6 +13,6 @@
     
     fclose($chamada);
 
-    header('Location: index.php');
+    echo "<script>alert('Chamada realizada com sucesso');location.href='index.php';</script>";
 
 ?>

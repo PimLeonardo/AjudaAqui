@@ -11,6 +11,6 @@
     
     fclose($chamada);
 
-    header('Location: home.php');
+    echo "<script>alert('Dúvida registrada com sucesso');location.href='home.php';</script>";
     
 ?>
